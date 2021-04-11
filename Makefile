@@ -108,7 +108,6 @@ static-check: ## Run verification script for boilerplate, codegen, gofmt, golint
 
 .PHONY: test
 test:  ## Run go unit tests.
-	@build/run-in-docker.sh \
 		PKG=$(PKG) \
 		ARCH=$(ARCH) \
 		COMMIT_SHA=$(COMMIT_SHA) \
